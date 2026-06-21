@@ -1,111 +1,70 @@
-# What inside? <br/> <sub> https://19-spotify-clone.vercel.app/ </sub>
+<div align="center">
+  <img src="https://img.shields.io/badge/Spotify-1ED760?style=for-the-badge&logo=spotify&logoColor=white" alt="Spotify Badge"/>
+  <img src="https://img.shields.io/badge/Made%20With-Love-ff69b4?style=for-the-badge" alt="Made With Love"/>
+  
+  # 🎵 SpotOn
 
-![19_spotify-clone](https://i.imgur.com/YyqXl2t.png)
+  **A Premium, Full-Feature Music Streaming Web Application Inspired by Spotify.**
+  
+  <p align="center">
+    <a href="#-key-features">Key Features</a> •
+    <a href="#-tech-stack">Tech Stack</a> •
+    <a href="#-architecture--database-design">Architecture</a> •
+    <a href="#-getting-started">Getting Started</a> •
+    <a href="#-future-roadmap">Roadmap</a>
+  </p>
+</div>
 
-<br/>
-<br/>
-<br/>
+---
 
-# Clone repository
+## 📌 Project Overview
 
-## Step 1.1 - clone repository (variant 1)
+**SpotOn** is a high-performance, pixel-perfect music streaming platform built to replicate the core experience of Spotify. This project showcases the implementation of complex audio state management, responsive UI design, secure user authentication, and relational/non-relational data modeling. It provides users with a seamless environment to discover music, manage personal libraries, and stream audio without interruptions.
 
-![alt text](https://i.imgur.com/9KSgjaN.png)
+---
 
-## or Step 1.1 - clone repository (variant 2)
+## ✨ Key Features
 
-```
-git clone https://github.com/nicitaacom/19_spotify-clone
-```
+### 🎧 Audio & Playback Engine
+* **Persistent Media Player:** Uninterrupted audio playback that persists seamlessly across page transitions and route changes.
+* **Advanced Playback Controls:** Fully interactive seeker bar, volume control, mute toggle, shuffle, and repeat modes.
+* **Queue Management:** Dynamic queue system allowing users to view, reorder, or add upcoming tracks on the fly.
 
-## Step 1.2 - install deps
+### 📂 User Personalization
+* **Custom Playlists:** Full CRUD functionality allowing users to create, rename, delete, and add/remove tracks from playlists.
+* **Liked Songs Library:** A dedicated, automated smart-playlist for tracks a user saves.
+* **Dynamic Search:** Real-time search functionality indexing tracks, albums, and artists instantly as you type.
 
-```
-pnpm i
-```
+### 🛡️ Core Infrastructure
+* **Secure Authentication:** Secure user registration, login, and session persistence (using Supabase).
+* **Responsive Layout:** A modern, beautiful dark-mode interface optimized flawlessly for Desktop, Tablet, and Mobile devices.
+* **Payment Integration:** Built-in premium infrastructure handling subscription processing natively with Stripe.
 
-## Step 1.3 - run project
+---
 
-```
-pnpm dev
-```
+## 🛠️ Tech Stack
 
-<br/>
-<br/>
-<br/>
+| Layer | Technology | Purpose |
+| :--- | :--- | :--- |
+| **Framework** | Next.js 13.4 / React | Server-side rendering, component architecture, and routing |
+| **Styling** | Tailwind CSS | Modern, maintainable utility-first design |
+| **Backend / Auth** | Supabase | Real-time backend management, user authentication, and Postgres integration |
+| **Database** | PostgreSQL | Storing structured user data, playlists, and track metadata |
+| **Payments** | Stripe | Handling secure end-to-end premium subscriptions |
 
-## Step 2 - setup .env
+---
 
-### 2.1 - github
+## 🏁 Getting Started
 
-![Go to settings](https://i.imgur.com/vnG4aMh.png)
+Follow these instructions to set up the project locally on your machine.
 
-### 2.2 - github
+### Prerequisites
+* Node.js installed (v16.x or higher recommended)
+* A Supabase account and a Stripe developer account configured
 
-![Go to developer settings](https://i.imgur.com/eodZM9p.png)
+### Installation & Setup
 
-### 2.3 - github
-
-![OAuth Apps](https://i.imgur.com/yjeGtKv.png)
-
-### 2.4 - github
-
-![New OAuth App](https://i.imgur.com/QXuo0kE.png)
-
-### 2.5 - github
-
-![Auth url](https://i.imgur.com/MKmuYnA.png)
-
-### 2.6 - github
-
-![Copy env values](https://i.imgur.com/SIkWyeE.png)
-
-### 2.7 - github
-
-![Paste env values](https://i.imgur.com/yoevhr7.png)
-
-<hr/>
-
-### 2.8 - supabase (Login in supabase - https://app.supabase.com/sign-in)
-
-![Login in supabase](https://i.imgur.com/zxJFahy.png)
-
-### 2.9 - supabase
-
-![Click new project](https://i.imgur.com/9YZGJ8j.png)
-
-### 2.10 - supabase
-
-![Enter aer](https://i.imgur.com/zxJFahy.png)
-
-### 2.11 - supabase
-
-![Set up project](https://i.imgur.com/0xIb866.png)
-
-### 2.12 - supabase
-
-![Copy env](https://i.imgur.com/592li1Z.png)
-
-### 2.13 - supabase
-
-![Paste env](https://i.imgur.com/Qpvso8o.png)
-
-<hr/>
-
-### 2.14 - stripe
-
-![create new project](https://i.imgur.com/q89qoOS.png)
-
-### 2.14 - stripe
-
-![Choose name for project](https://i.imgur.com/1A0I7t3.png)
-
-### 2.14 - stripe
-
-![Copy public key and secret key](https://i.imgur.com/JZsT4Na.png)
-
-### 2.15 - stripe
-
-![Paste public and secret key](https://i.imgur.com/Ja1Iwuo.png)
-
-### 2.16 - stripe (use this guide to paste your webhook https://youtu.be/2aeMRB8LL4o?t=20951)
+1. **Clone your repository:**
+   ```bash
+   git clone [https://github.com/Auranzeb05/SpotOn.git](https://github.com/Auranzeb05/SpotOn.git)
+   cd SpotOn
